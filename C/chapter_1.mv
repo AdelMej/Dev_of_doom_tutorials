@@ -1,0 +1,73 @@
+# Chapter 1 – C Basics: Types and Variables
+
+Welcome to Chapter 1! 🎯  
+Here we’ll cover the **fundamental building blocks** of C programming: types and variables.
+
+---
+
+## What You’ll Learn
+
+- Integer types: `int`, `long`, `long long`  
+- Character types: `char`, `char*`  
+- Floating-point types: `float`, `double`  
+- Unsigned variants: `unsigned int`, `unsigned long`, `unsigned long long`  
+- How negative numbers are represented in memory  
+- Why the bit representation matters  
+
+---
+
+## 1.1 Basic Types
+
+| Type                | Size (typical) | Description                       |
+|--------------------|----------------|-----------------------------------|
+| `int`              | 4 bytes        | Basic integer                     |
+| `long`             | 8 bytes        | Larger integer                    |
+| `long long`        | 8 bytes        | Very large integer                |
+| `char`             | 1 byte         | Single character                  |
+| `char*`            | 8 bytes        | Pointer to string                 |
+| `float`            | 4 bytes        | Single-precision floating-point   |
+| `double`           | 8 bytes        | Double-precision floating-point   |
+| `unsigned int`     | 4 bytes        | Only positive numbers             |
+| `unsigned long`    | 8 bytes        | Larger positive numbers           |
+| `unsigned long long` | 8 bytes      | Very large positive numbers       |
+
+---
+
+## 1.2 Negative Numbers & Signed Bits
+
+C uses **two’s complement** to represent negative numbers:  
+
+- The **highest bit** indicates the sign (`0` for positive, `1` for negative).  
+- This is why signed integers have a **limited negative range**, while unsigned integers can use **all bits for value**.  
+
+> Example: a signed 8-bit integer:  
+> - `00000001` = 1  
+> - `11111111` = -1  
+
+---
+
+## 1.3 Why Bit Representation Matters
+
+- Understanding bitwise representation helps with:  
+  - Low-level programming  
+  - Optimizations  
+  - Networking and binary protocols  
+
+---
+
+## 1.4 Quick Exercises
+
+1. Print the max and min values of different integer types.  
+2. Experiment with negative numbers and see their memory representation using pointers.  
+3. Try declaring unsigned variables and see how arithmetic behaves differently.  
+
+---
+
+## ⭐ Difficulty Rating
+
+⭐⭐ (Beginner) – basic types and concepts, but crucial for everything that comes next.
+
+---
+
+Next up: **Chapter 2 – Operators and Expressions**. Get ready to manipulate values and see some fun in action! 🔥
+
