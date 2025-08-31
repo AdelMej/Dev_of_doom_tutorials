@@ -1,72 +1,91 @@
-# Chapter 1 – C Basics: Types and Variables
+# Chapter 1 – Basics
+**Topic:** Variables, data types, operators  
+**Difficulty:** ⭐
 
-Welcome to Chapter 1! 🎯  
-Here we’ll cover the **fundamental building blocks** of C programming: types and variables.
+## 1. Variables
+Variables store data in memory.  
+Syntax example:
 
----
+```c
+int age = 25;
+float pi = 3.14;
+char letter = 'A';
+```
+## 2. Data Types
 
-## What You’ll Learn
+- `int` – whole numbers, e.g., 42
+- `long` / `long long` – larger integers
+- `char` – single character
+- `char*` – string (pointer to char array)
+- `float` / `double` – decimal numbers
+- `unsigned` variants – only positive numbers
 
-- Integer types: `int`, `long`, `long long`  
-- Character types: `char`, `char*`  
-- Floating-point types: `float`, `double`  
-- Unsigned variants: `unsigned int`, `unsigned long`, `unsigned long long`  
-- How negative numbers are represented in memory  
-- Why the bit representation matters  
+## 3. Constants
+const int x = 5; /* value cannot change */
 
----
+## Operators
 
-## 1.1 Basic Types
+### Arithmetic Operators
+Basic math operations.
 
-| Type                | Size (typical) | Description                       |
-|--------------------|----------------|-----------------------------------|
-| `int`              | 4 bytes        | Basic integer                     |
-| `long`             | 8 bytes        | Larger integer                    |
-| `long long`        | 8 bytes        | Very large integer                |
-| `char`             | 1 byte         | Single character                  |
-| `char*`            | 8 bytes        | Pointer to string                 |
-| `float`            | 4 bytes        | Single-precision floating-point   |
-| `double`           | 8 bytes        | Double-precision floating-point   |
-| `unsigned int`     | 4 bytes        | Only positive numbers             |
-| `unsigned long`    | 8 bytes        | Larger positive numbers           |
-| `unsigned long long` | 8 bytes      | Very large positive numbers       |
+- `+` : addition  
+- `-` : subtraction  
+- `*` : multiplication  
+- `/` : division  
+- `%` : modulo (remainder)
 
----
+**Example:**
+```c
+int a = 5 + 3;  // 8
+int b = 10 % 3; // 1
+```
+### Comparison Operators
+Compare values, result is 0 (false) or 1 (true).
+- == : equal to
+- != : not equal to
+- < : less than
+- > : greater than
+- <= : less than or equal to
+- >= : greater than or equal to
 
-## 1.2 Negative Numbers & Signed Bits
+Example:
 
-C uses **two’s complement** to represent negative numbers:  
+```c
+int x = 5;
+int y = 10;
+int result = x < y; // 1 (true)
+```
+### Logical Operators
+Combine or negate boolean values (0 = false, non-zero = true).
+- `&&` : AND
+- `||` : OR
+- `!` : NOT
 
-- The **highest bit** indicates the sign (`0` for positive, `1` for negative).  
-- This is why signed integers have a **limited negative range**, while unsigned integers can use **all bits for value**.  
+Example:
+```c
+int a = 1;  // true
+int b = 0;  // false
+int c = a && b; // 0 (false)
+int d = !b;     // 1 (true)
+```
+### Assignment Operators
+Assign values to variables, optionally combined with arithmetic.
 
-> Example: a signed 8-bit integer:  
-> - `00000001` = 1  
-> - `11111111` = -1  
+- `=` : simple assignment
+- `+=` : add and assign
+- `-=` : subtract and assign
+- `*=` : multiply and assign
+- `/=` : divide and assign
+- `%=` : modulo and assign
 
----
+Example:
 
-## 1.3 Why Bit Representation Matters
+```c
+int z = 5;
+z += 3; // z = z + 3 → 8
+```
 
-- Understanding bitwise representation helps with:  
-  - Low-level programming  
-  - Optimizations  
-  - Networking and binary protocols  
+## Practice Challenge
 
----
-
-## 1.4 Quick Exercises
-
-1. Print the max and min values of different integer types.  
-2. Experiment with negative numbers and see their memory representation using pointers.  
-3. Try declaring unsigned variables and see how arithmetic behaves differently.  
-
----
-
-## ⭐ Difficulty Rating
-
-⭐⭐ (Beginner) – basic types and concepts, but crucial for everything that comes next.
-
----
-
-Next up: **Chapter 2 – Operators and Expressions**. Get ready to manipulate values and see some fun in action! 🔥
+Declare variables of each type.
+Perform some arithmetic and print the results.
