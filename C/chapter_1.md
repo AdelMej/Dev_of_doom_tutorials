@@ -41,12 +41,12 @@ int b = 10 % 3; // 1
 ```
 ### Comparison Operators
 Compare values, result is 0 (false) or 1 (true).
-- == : equal to
-- != : not equal to
-- < : less than
-- > : greater than
-- <= : less than or equal to
-- >= : greater than or equal to
+- `==` : equal to
+- `!=` : not equal to
+- `<` : less than
+- `>` : greater than
+- `<=` : less than or equal to
+- `>=` : greater than or equal to
 
 Example:
 
