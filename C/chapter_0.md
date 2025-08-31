@@ -20,7 +20,7 @@ This series is designed to teach you **C programming from scratch**, with a focu
 1. Chapters are numbered sequentially:  
    - Chapter 0 – Introduction  
    - Chapter 1 – Basics: Types & Variables  
-   - Chapter 2 – Operators & Expressions  
+   - Chapter 2 – Control Flow  
    - …and so on  
 
 2. **Difficulty rating** (⭐ system) for each chapter:  
