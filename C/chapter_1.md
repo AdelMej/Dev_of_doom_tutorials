@@ -70,4 +70,3 @@ C uses **two’s complement** to represent negative numbers:
 ---
 
 Next up: **Chapter 2 – Operators and Expressions**. Get ready to manipulate values and see some fun in action! 🔥
-
