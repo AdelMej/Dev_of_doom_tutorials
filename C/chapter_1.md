@@ -1,6 +1,6 @@
 # Chapter 1 – Basics
 **Topic:** Variables, data types, operators  
-**Difficulty:** ⭐
+**Difficulty:** ⭐  
 
 ## 1. Variables
 Variables store data in memory.  
