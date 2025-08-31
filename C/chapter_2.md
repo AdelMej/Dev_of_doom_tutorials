@@ -1,6 +1,6 @@
 # Chapter 2 – Control Flow
-Conditional statements and loops
-⭐⭐
+**Topic:** Conditional statements and loops
+**Difficulty:**⭐⭐
 
 ## Conditional Statements
 
