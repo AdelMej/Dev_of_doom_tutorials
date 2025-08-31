@@ -96,4 +96,3 @@ do {
 3. Create a `for` loop that prints numbers from 1 to 10.
 4. Write a `switch` statement that prints the name of the day for a variable `int day` (1–7).
 5. Bonus: Use a `while` loop to count down from 5 to 1 and print each number.
-```
